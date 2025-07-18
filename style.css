@@ -54,13 +54,29 @@ p {
     background-color: #e95d7b;
     color: white;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     transition: all 0.5s;
 }
 
 #limpar:hover{
     border: 2px solid #7c152b;
     background-color: #ca405e;
+    font-size: 1.5rem;
+   
+}
+
+#salvar {
+    border: 2px solid #22a33a;
+    background-color: #5de982;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+#salvar:hover{
+    border: 2px solid #157c30;
+    background-color: #40ca60;
     font-size: 1.5rem;
    
 }
