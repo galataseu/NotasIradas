@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const blocoDeNotas = document.getElementById('blocoDeNotas');
     const btnLimpar = document.getElementById('limpar');
     const btnSalvar = document.getElementById('salvar');
+    const btnAlterar = document.getElementById('alterar');
 
     btnLimpar.addEventListener('click', () => {
         localStorage.removeItem('minhaNota');
@@ -21,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('minhaNota', blocoDeNotas.value);
         carregarNotas
         console.log("Notas salvas no local storage.");
+    })
+
+    btnAlterar.addEventListener('click', () => {
+        body = document.getElementById('body');
+        body.classList.toggle("amarelo");
+        console.log("Cor do fundo alterada.")
     })
 
     // 2. CARREGANDO DADOS DO LOCALSTORAGE
