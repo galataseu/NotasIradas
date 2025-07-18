@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnSalvar.addEventListener('click', () => {
         localStorage.setItem('minhaNota', blocoDeNotas.value);
-        blocoDeNotas.value = notaSalva;
+        carregarNotas
         console.log("Notas salvas no local storage.");
     })
 
@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Aqui, estamos procurando por um item que salvamos com a chave 'minhaNota'.
     const notaSalva = localStorage.getItem('minhaNota');
 
+    function carregarNotas() {
+        blocoDeNotas.value = notaSalva
+    }
     // Verificamos se encontramos alguma nota salva.
     if (notaSalva) {
         // Se 'notaSalva' não for nulo (ou seja, existe algo salvo),
